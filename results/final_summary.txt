@@ -1,0 +1,27 @@
+
+--- Final Professional Summary ---
+Dataset: Pima Indians Diabetes Dataset
+Dataset Size: 768 samples, 9 features
+Train/Test Split: 80% / 20%
+Best Performing Model: ANN
+Best ROC-AUC: 0.8204
+Best Accuracy: 0.7403
+
+SHAP Analysis:
+- Most Important Feature: Glucose
+- Top 3 Influences: Glucose, BMI, Age
+
+Model comparison saved to: results/model_comparison.csv
+Trained models saved to: saved_models/
+All visualizations (including SHAP) saved to: plots/
+Explainability report saved to: results/shap_feature_importance.csv
+
+
+Full Comparison:
+                 Model  Accuracy  Precision    Recall  F1-Score   ROC-AUC  CV_Avg_Accuracy
+0  Logistic Regression  0.701299   0.586957  0.500000  0.540000  0.812778         0.772167
+1        Decision Tree  0.681818   0.553191  0.481481  0.514851  0.635741         0.709778
+2        Random Forest  0.779221   0.727273  0.592593  0.653061  0.819074         0.764383
+3                  SVM  0.707792   0.604651  0.481481  0.536082  0.812963         0.765648
+4                  KNN  0.733766   0.632653  0.574074  0.601942  0.791852         0.757864
+5                  ANN  0.740260   0.645833  0.574074  0.607843  0.820370              NaN
